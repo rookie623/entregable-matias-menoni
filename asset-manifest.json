@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/entregable-matias-menoni/static/css/main.fe57c324.css",
+    "main.js": "/entregable-matias-menoni/static/js/main.5f5353f0.js",
+    "index.html": "/entregable-matias-menoni/index.html",
+    "main.fe57c324.css.map": "/entregable-matias-menoni/static/css/main.fe57c324.css.map",
+    "main.5f5353f0.js.map": "/entregable-matias-menoni/static/js/main.5f5353f0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe57c324.css",
+    "static/js/main.5f5353f0.js"
+  ]
+}
