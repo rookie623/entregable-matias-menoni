@@ -23,6 +23,7 @@ export default function Item({producto, stock, aumentar}) {
   return (
     <div className='producto'>
       {/* maquetar Item aquí */}
+      
       <h3>{producto.nombre}</h3>
       <p>{producto.descripcion}</p>
       <h5>En stock: {stockr > 0 ? stockr : <span>agotado</span>}</h5>
