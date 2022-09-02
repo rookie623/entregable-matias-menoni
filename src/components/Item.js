@@ -11,23 +11,22 @@
 
 import { useState } from "react"
 
-export default function Item({producto, stock, aumentar}) {
+export default function Item({item, stock, comprarProducto}) {
 
-  const [stockr, setStockr] = useState(stock)
+  const [disponibilidad, setDisponibilidad] = useState(stock)
 
   const modificar = () =>{
-    aumentar()
-    setStockr(stockr - 1)    
+    comprarProducto()
+    setDisponibilidad(disponibilidad - 1)    
   }
 
   return (
     <div className='producto'>
       {/* maquetar Item aquí */}
-      
-      <h3>{producto.nombre}</h3>
-      <p>{producto.descripcion}</p>
-      <h5>En stock: {stockr > 0 ? stockr : <span>agotado</span>}</h5>
-      {stockr > 0 ? <button onClick={()=> modificar()}>COMPRAR</button> : <button disabled onClick={()=> modificar()}>SIN STOCK</button>}
+      <h3>{item.nombre}</h3>
+      <p>{item.descripcion}</p>
+      <h5>En stock: {disponibilidad > 0 ? disponibilidad : <span>agotado</span>}</h5>
+      {disponibilidad > 0 ? <button onClick={()=> modificar()}>COMPRAR</button> : <button disabled>SIN STOCK</button>}
     </div>
   )
 }

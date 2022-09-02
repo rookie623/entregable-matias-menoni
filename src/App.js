@@ -13,14 +13,14 @@ function App() {
 
   const [comprados, setComprados] = useState(0)
 
-  const aumentar = () =>{
+  const comprarProducto = () =>{
     setComprados(comprados + 1)
   }
 
   return (
     <div className="App">
       <Cabecera comprados={comprados}/>
-      <Listado aumentar={aumentar}/>
+      <Listado comprarProducto={comprarProducto}/>
     </div>
   );
 }
